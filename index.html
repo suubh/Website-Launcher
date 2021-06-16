@@ -7,86 +7,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <style>
-            body{
-	            text-align: center;
-	            background: #bfefef;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 100;
-                background-image: linear-gradient(to bottom right, lightblue, yellow);
-                background-repeat: repeat;
-                color: black;
-                height: 1000px;
-            }
-            h1{
-                color: black;
-                text-shadow: 6px 6px 10px #f8f8f0;
-                font-weight: 100;
-                font-size: 40px;
-                margin: 40px 0px 20px;
-                font-size: 60px;
-                margin-top:1%;
-            }
-            h2{
-                font-size: 40px;
-                margin: 1%;
-            }
-            #clockdiv{
-                font-family: sans-serif;
-                color: #fff;
-                display: inline-block;
-                font-weight: 100;
-                text-align: center;
-                font-size: 30px;
-                color: black;
-                font-family: 'Montserrat', sans-serif;
-                opacity: 0.6;
-                font-weight:bold;
-    
-            }
-            #clockdiv > div{
-                padding: 10px;
-                border-radius: 8px;
-                background: #bfefef;
-                display: inline-block;
-            }
-            #clockdiv div > span{
-                padding: 15px;
-                border-radius: 8px;
-                background:#bfefef;
-                display: inline-block;
-                margin: 20px;
-                font-size:50px;
-            }
-            smalltext{
-                padding-top: 5px;
-                font-size: 16px;
-            }
-            .example_b {
-                margin-top:40px;
-                color: black !important;
-                /* text-transform: uppercase; */
-                text-decoration: none;
-                background: #e8f0f3;
-                padding: 20px;
-                border-radius: 50px;
-                display: inline-block;
-                border: none;
-                transition: all 0.4s ease 0s;
-                font-weight: bold;
-                font-family: 'Montserrat', sans-serif;
-                font-size:25px;
-            }
-            .example_b:hover {
-                text-shadow: 0px 0px 6px rgb(14, 13, 13);
-                -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-                -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-                transition: all 0.4s ease 0s;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <br>
+    <!-- ENTER YOUR LOGO HERE -->
     <img src="goldenlogo.png">
     <h1>ENTER YOUR BUSINESS OR ORGANISATION NAME</h1>
     <h2>Welcomes you on</h2>
@@ -112,32 +37,12 @@
     </div>
 
     <div class="button_cont" align="center">
-        <a class="example_b" href="http://ghssmahadevpur.in/" target="_blank" rel="nofollow noopener noreferrer" draggable="false">
+        <!-- ENTER YOUR WEBSITE LINK HERE -->
+        <a class="example_b" href="#" target="_blank" rel="nofollow noopener noreferrer" draggable="false">
             <p id="demo"></p>
         </a>
     </div>
 
-    <script>
-        var deadline = new Date("jun 16, 2021 02:36:40").getTime(); //ENTER YOUR TIME HERE
-        var x = setInterval(function() {
-        var now = new Date().getTime();
-        var t = deadline - now;
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("day").innerHTML =days ;
-        document.getElementById("hour").innerHTML =hours;
-        document.getElementById("minute").innerHTML = minutes;
-        document.getElementById("second").innerHTML =seconds;
-        if (t < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "ghssmahadevpur.in";
-                document.getElementById("day").innerHTML ='0';
-                document.getElementById("hour").innerHTML ='0';
-                document.getElementById("minute").innerHTML ='0' ;
-                document.getElementById("second").innerHTML = '0'; }
-        }, 1000);
-    </script>
+    <script src="countdown.js"> </script>
 </body>
 </html>

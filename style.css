@@ -1,1 +1,75 @@
-
+            body{
+	            text-align: center;
+	            background: #bfefef;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 100;
+                background-image: linear-gradient(to bottom right, lightblue, yellow);
+                background-repeat: repeat;
+                color: black;
+                height: 1000px;
+            }
+            h1{
+                color: black;
+                text-shadow: 6px 6px 10px #f8f8f0;
+                font-weight: 100;
+                font-size: 40px;
+                margin: 40px 0px 20px;
+                font-size: 60px;
+                margin-top:1%;
+            }
+            h2{
+                font-size: 40px;
+                margin: 1%;
+            }
+            #clockdiv{
+                font-family: sans-serif;
+                color: #fff;
+                display: inline-block;
+                font-weight: 100;
+                text-align: center;
+                font-size: 30px;
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                opacity: 0.6;
+                font-weight:bold;
+    
+            }
+            #clockdiv > div{
+                padding: 10px;
+                border-radius: 8px;
+                background: #bfefef;
+                display: inline-block;
+            }
+            #clockdiv div > span{
+                padding: 15px;
+                border-radius: 8px;
+                background:#bfefef;
+                display: inline-block;
+                margin: 20px;
+                font-size:50px;
+            }
+            smalltext{
+                padding-top: 5px;
+                font-size: 16px;
+            }
+            .example_b {
+                margin-top:40px;
+                color: black !important;
+                /* text-transform: uppercase; */
+                text-decoration: none;
+                background: #e8f0f3;
+                padding: 20px;
+                border-radius: 50px;
+                display: inline-block;
+                border: none;
+                transition: all 0.4s ease 0s;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                font-size:25px;
+            }
+            .example_b:hover {
+                text-shadow: 0px 0px 6px rgb(14, 13, 13);
+                -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+                -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+                transition: all 0.4s ease 0s;
+            }
