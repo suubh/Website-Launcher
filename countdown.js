@@ -1,4 +1,4 @@
-var deadline = new Date("jun 16, 2021 02:36:40").getTime(); //ENTER YOUR LAUNCH TIME HERE
+var deadline = new Date("dec 10, 2021 09:00:00").getTime(); //ENTER YOUR LAUNCH TIME HERE
         var x = setInterval(function() {
         var now = new Date().getTime();
         var t = deadline - now;
